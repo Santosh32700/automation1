@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${title}">Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+  <!-- -navbar strated-- --> 
+  
+  
+  <nav class="navbar fixed-top navbar-expand-lg bg-primary ">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img th:src="@{/images/tanti_1.svg}" class="logo" alt="" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  mx-auto mb-2 mb-lg-0 ">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="span"> Products</span> <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home_Automation</a></li>
+            <li><a class="dropdown-item" href="#">Security</a></li>
+            <li><a class="dropdown-item" href="#">Infotainment</a></li>
+            <li><a class="dropdown-item" href="#">Entertainment</a></li>
+            <li><a class="dropdown-item" href="#">Energy Management</a></li>
+          </ul>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="span">Solutions</span> <i class="fa-solid fa-caret-down" ></i>
+          </a>
+          <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="#">Home_Automation</a></li>
+            <li><a class="dropdown-item" href="#">Security</a></li>
+            <li><a class="dropdown-item" href="#">Infotainment</a></li>
+            <li><a class="dropdown-item" href="#">Entertainment</a></li>
+            <li><a class="dropdown-item" href="#">Energy Management</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <span class="span">Company </span> <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">Home_Automation</a></li>
+            <li><a class="dropdown-item" href="#">Security</a></li>
+            <li><a class="dropdown-item" href="#">Infotainment</a></li>
+            <li><a class="dropdown-item" href="#">Entertainment</a></li>
+            <li><a class="dropdown-item" href="#">Energy Management</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+            <span class="span">Support</span> <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home_Automation</a></li>
+            <li><a class="dropdown-item" href="#">Security</a></li>
+            <li><a class="dropdown-item" href="#">Infotainment</a></li>
+            <li><a class="dropdown-item" href="#">Entertainment</a></li>
+            <li><a class="dropdown-item" href="#">Energy Management</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn btn-outline-primary" style="padding: 7px 50px;border-radius: 5rem;background-color: #fff;" type="submit">Lets Talk</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  
+   <!-- -navbar ended-- --> 
+   
+   <div th:replace="${content}">
+   </div>
+   
+    <!-- -footer started-- --> 
+    <div class="footer">
+      <div class="top">
+        <img th:src="@{/images/tapl-logo-h.png}" alt="">
+        <p>Complete Building Automation</p>
+      </div>
+      <div class="midl">
+        <div class="box1">
+
+          <div class="b2">
+            <div class="b21">
+            107, 4th D Cross Rd, Lal Bahadur Nagar,<br>
+            East of NGEF Layout, Kasturi Nagar, Bengaluru,<br>
+            Karnataka 560043
+            </div>
+      
+            <div class="b22">
+              61, Banashankari nilaya, Basaveshwaranagar, <br>
+              Mysuru, Karnataka 570022
+            </div>
+            <div class="smedia">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            
+          </div>
+          <div class="b4">
+          <div class="b1">
+            <div class="l11">Products </div>
+            <div class="l1">All products</div>
+            <div class="l1">Scenarios</div>
+            <div class="l1">Build your system </div>
+            <div class="l1">Compliance with <br>standards </div>
+            
+          </div>
+          <div class="b1">
+            <div class="l11">Services </div>
+            <div class="l2">About </div>
+            <div class="l2">Why Tanti </div>
+            <div class="l2">How it works </div>
+            <div class="l2">Careers </div>
+            
+          </div>
+          
+          <div class="b1">
+            <div class="l11">Resources </div>
+            <div class="l2">News </div>
+            <div class="l2">Blog </div>
+            <div class="l2">Videos </div>
+            <div class="l2">FAQs</div>
+            
+          </div>
+        </div>
+        </div>
+        <div class="box2">
+          <div class="l4">Subscribe with us</div>
+          <div class="l2">Subscribe to our emails about secure life. No spam.</div>
+          <div class="inp">
+            <div class="l5">
+              <input type="text" name="" placeholder="Email" id="">
+            </div>
+          </div>
+          <div class="l4">Connect With Us</div>
+          <div class="conn">
+          <div>Tel: +91 962 022 0491 | +91 962 022 0492</div>
+          <div>Email: mail@tanti.co | projects@tanti.co</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buttom">
+      <div class="but1">Copyright 2009 - 2022. All rights reserved. Develop and maintained by Tanti Automatic pvt ltd.</div>
+      <div class="but2">
+        <div class="but3">
+          <div>Privacy Policy</div>
+          <div>Terms of Service</div>
+        </div>
+        
+
+      </div>
+      
+    </div>
+   <!-- -footer ended-- --> 
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script th:src="@{/js/main.js}" type="text/javascript"></script>
+  <script type="text/javascript">
+  var span= document.getElementsByTagName('span');
+  var boxx= document.getElementsByClassName('boxx');
+  var l=0;
+  span[1].onclick=()=>{
+      l++;
+      for(var i of boxx)
+      {
+          if (l==0){i.style.left="0px";}
+          if (l==1){i.style.left="-320px";}
+          if (l==2){i.style.left="-640px";}
+          // if (l==3){i.style.left="-950px";}
+          // if (l==4){i.style.left="-1240px";}
+          if (l>4){l=4;}
+      }
+  }
+
+  span[0].onclick=()=>{
+      l--;
+      for(var i of boxx){
+          if (l==0){i.style.left="0px";}
+          if (l==1){i.style.left="-320px";}
+          if (l==2){i.style.left="-640px";}
+          // if (l==3){i.style.left="-950px";}
+          if (l<0){l=0;}
+      }
+  }
+  
+  </script>
+  
+  </body>
+</html>
